@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 records = [
     {'source': '48-996355555', 'destination': '48-666666666', 'end': 1564610974, 'start': 1564610674},
@@ -15,6 +15,53 @@ records = [
     {'source': '48-996383697', 'destination': '41-885633788', 'end': 1564627800, 'start': 1564626000}
 ]
 
+def calculate_call_price(start, end):
+    callStart = datetime.fromtimestamp(start)
+    callEnd = datetime.fromtimestamp(end)
+    tax = 0.36
+    # percorre a duração da chamada enquanto os segundos fecham o
+    # ciclo de 60 segundos(1 minuto)
+    while callStart < callEnd and (callEnd - callStart).total_seconds() >= 60:
+        # verifica se o minuto se encontra dentro do período tarifado
+        if callStart.hour >= 6 and callStart.hour < 22:
+            tax = tax + 0.09
+        # incrementa 1 minuto no início da chamada
+        callStart = callStart + timedelta(minutes=1)
+    return tax
+
+def filter_records(records):
+
+    results = []
+    # percorre cada registro da lista inicial
+    for record in records:
+        i = 0
+        # retorna o valor da chamada do registro da vez no loop
+        price = calculate_call_price(record['start'], record['end'])
+        # percorre cada registro da lista que está sendo gerada 
+        for result in results:
+            # verifica se o registro da vez já foi adicionado
+            # à nova lista
+            if result['source'] == record['source']:
+                i = 1
+                # caso já esteja na nova lista apenas somamos
+                # os valores
+                result['total'] = result['total'] + price
+        if i == 0:
+            # adiciona o registro a nova lista quando inexistente
+            results.append({'source': record['source'], 'total': price})
+    return results
 
 def classify_by_phone_number(records):
-    pass
+
+    results = []
+    # filtra as ligações unindo ligações do mesmo número
+    # calculando o valor total
+    calls = filter_records(records)
+    # após o cálculo terminado percore cada resgistro
+    # formatando o valor total com 2 casas após a vírgula
+    for call in calls:
+        results.append({'source': call['source'], 'total': round(call['total'], 2)})
+    # ordena a lista por valor em ordem decrescente
+    results = sorted(results, key=lambda x: x['total'], reverse=True)
+
+    return results
