@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-3.6.2, py-1.5.3, pluggy-0.6.0 -- /usr/bin/python
+cachedir: .pytest_cache
+rootdir: /home/anderson/codenation/python-7, inifile:
+collecting ... collected 13 items
+
+test_main.py::test_get_temperature_by_lat_lng[62--14.235004--51.92528-16] PASSED [  7%]
+test_main.py::test_get_temperature_by_lat_lng[62.54--14.235004--51.92528-16] PASSED [ 15%]
+test_main.py::test_get_temperature_by_lat_lng[5-15.58564--13.85478--15] PASSED [ 23%]
+test_main.py::test_get_temperature_by_lat_lng[-13-22.8523-17.358746--25] PASSED [ 30%]
+test_main.py::test_get_temperature_by_lat_lng[0-22.8523-17.358746--17] PASSED [ 38%]
+test_main.py::test_get_temperature_with_invalid_lat_lng[62-90.003453-17.358746-expected0] PASSED [ 46%]
+test_main.py::test_get_temperature_with_invalid_lat_lng[62--90.003453-17.358746-expected1] PASSED [ 53%]
+test_main.py::test_get_temperature_with_invalid_lat_lng[62-32.23456-180.358746-expected2] PASSED [ 61%]
+test_main.py::test_get_temperature_with_invalid_lat_lng[62-32.23456--180.358746-expected3] PASSED [ 69%]
+test_main.py::test_get_temperature_with_invalid_lat_lng_type[62-None-17.358746-expected0] PASSED [ 76%]
+test_main.py::test_get_temperature_with_invalid_lat_lng_type[62--90.003453-Test-expected1] PASSED [ 84%]
+test_main.py::test_get_temperature_with_unexpected_return[None-89.98345-17.358746-Invalid type data] PASSED [ 92%]
+test_main.py::test_get_temperature_with_unexpected_return[Test-15.23098-17.358746-Invalid type data] PASSED [100%]
+
+------ generated xml file: /home/anderson/codenation/python-7/output.xml -------
+========================== 13 passed in 4.58 seconds ===========================
