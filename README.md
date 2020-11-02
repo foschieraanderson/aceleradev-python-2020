@@ -9,3 +9,6 @@ Repositório com o conteúdo e desafios apresentados durante o curso AceleraDev 
 
 ## Sobre a Stone
 >Stone Pagamentos é uma Fintech brasileira de meios de pagamentos através dos seus serviços de adquirência multibandeiras por intermédio de máquinas de cartões, processadoras de transações realizadas por cartões de crédito, débito e voucher. Atua no mercado desde 2014, cobrindo todo o território brasileiro.
+
+## Sobre o AceleraDev
+>O AceleraDev é um programa de capacitação gratuito para profissionais de tecnologia. Desenvolvido pela Codenation e patrocinado por uma empresa apoiadora (que busca contratar pessoas da turma ao final), cada edição dura 10 semanas, foca em uma única tecnologia e trabalha com desafios de programação semanais e projeto prático com auxílio de mentoria, simulando a realidade do mercado.
