@@ -12,3 +12,41 @@ Repositório com o conteúdo e desafios apresentados durante o curso AceleraDev 
 
 ## Sobre o AceleraDev
 >O AceleraDev é um programa de capacitação gratuito para profissionais de tecnologia. Desenvolvido pela Codenation e patrocinado por uma empresa apoiadora (que busca contratar pessoas da turma ao final), cada edição dura 10 semanas, foca em uma única tecnologia e trabalha com desafios de programação semanais e projeto prático com auxílio de mentoria, simulando a realidade do mercado.
+
+## Course Modules
+
+### 1st module
+
+`Data Structures, Programming Logic, PEP8`
+
+### 2nd module
+
+`OOP: Inheritance, Composition, Class Methods, Static Methods, Instance Methods`
+
+### 3rd module
+
+`Unit tests, Mock, Pytest, Monkeypatch`
+
+### 4th module
+
+`JWT (JSON Web Tokens), Socket, HTTP Protocol`
+
+### 5th module
+
+`Database Models, Django Models, Validations`
+
+### 6th module
+
+`Django Rest Framework: Serialization, Requests and responses, Function based views, Viewsets and routers`
+
+### 7th module
+
+`Django ORM: filtering, caching, raw SQL`
+
+### 8th module
+
+`API Design, RAML 1.0, Swagger, Sphinx`
+
+### 9th module
+
+`Continous Integration, Continous Delivery, Travis CI`
