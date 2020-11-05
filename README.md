@@ -13,40 +13,44 @@ Repositório com o conteúdo e desafios apresentados durante o curso AceleraDev 
 ## Sobre o AceleraDev
 >O AceleraDev é um programa de capacitação gratuito para profissionais de tecnologia. Desenvolvido pela Codenation e patrocinado por uma empresa apoiadora (que busca contratar pessoas da turma ao final), cada edição dura 10 semanas, foca em uma única tecnologia e trabalha com desafios de programação semanais e projeto prático com auxílio de mentoria, simulando a realidade do mercado.
 
-## Course Modules
+## Modulos
 
-### 1st module
+### 1º Módulo
 
-`Data Structures, Programming Logic, PEP8`
+`Estruturas de dados, Lógica de programação, PEP 8`
 
-### 2nd module
+### 2° Módulo
 
-`OOP: Inheritance, Composition, Class Methods, Static Methods, Instance Methods`
+`OOP: Herança, Composição, Métodos de classe, Métodos de Instância, Métodos estáticos`
 
-### 3rd module
+### 3º Módulo
 
-`Unit tests, Mock, Pytest, Monkeypatch`
+`Testes unitários, Mock, Pytest, Monkeypatch`
 
-### 4th module
+### 4º Módulo
 
-`JWT (JSON Web Tokens), Socket, HTTP Protocol`
+`Protocolos de comunicação (HTTP, TCP, UDP, SOCKET), Conceitos básicos de arquitetura distribuída, Conceitos básicos sobre segurança em APIs e aplicações web, Autenticação, Tokens JWT`
 
-### 5th module
+### 5º Módulo
 
-`Database Models, Django Models, Validations`
+`Models, Urls, Views, Settings, Validações, Middlewares`
 
-### 6th module
+### 6º Módulo
 
-`Django Rest Framework: Serialization, Requests and responses, Function based views, Viewsets and routers`
+`Django Rest Framework, Serialization, Requests and responses, Function based views, Viewsets and route`
 
-### 7th module
+### 7º Módulo
 
 `Django ORM: filtering, caching, raw SQL`
 
-### 8th module
+### 8º Módulo
 
 `API Design, RAML 1.0, Swagger, Sphinx`
 
-### 9th module
+### 9º Módulo
 
-`Continous Integration, Continous Delivery, Travis CI`
+`Integração contínua, Entrega Contínua, Travis CI`
+
+### 10º Módulo
+
+[Projeto Final](https://github.com/foschieraanderson/central-de-erros)
